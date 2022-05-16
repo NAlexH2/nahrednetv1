@@ -8,9 +8,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={alexharrisphoto}
-          width="400"
-          height="400"/>
+        <img className="my-picture" src={alexharrisphoto}/>
         <p>Reach me at <a className="Any-link" href="mailto:alex@nah-red.net">alex@nah-red.net</a></p>
       </header>
     </div>
