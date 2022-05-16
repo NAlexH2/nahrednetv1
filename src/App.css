@@ -10,7 +10,7 @@ TODO - revisit this file when you have time*/
 /*great class for pictures using a default size and stuff.
   Not so great when the user uses mouse wheel to zoom the webpage in though...*/
 .my-picture {
-  height: 50vmin;
+  height: 40vmin;
   pointer-events: none;
 }
 
@@ -22,7 +22,7 @@ TODO - revisit this file when you have time*/
 
 
 .App-header {
-  background-color: #4e4e4e;
+  background-color: #7c7c7c;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,6 +36,7 @@ TODO - revisit this file when you have time*/
 
 .General-text {
   display: flex;
+  max-width: 600px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
