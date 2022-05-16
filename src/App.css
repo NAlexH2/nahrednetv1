@@ -34,6 +34,16 @@ TODO - revisit this file when you have time*/
   font-weight:bold;
 }
 
+.General-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(6px + 2vmin);
+  color: rgb(0, 0, 0);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .Any-link {
   color: #FCC400;
 }
