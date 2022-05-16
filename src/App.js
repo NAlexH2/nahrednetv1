@@ -16,7 +16,7 @@ function App() {
         </p>
         <div className='General-text'>
         This website is more of a little fun side project where I'm exploring web page development using
-        AWS Amplify and github integration for rapid deployment and changes built using React.
+        AWS Amplify and github integration for rapid deployment and changes. All built using React.
         </div>
         <p>Reach me at <a className="Any-link" href="mailto:alex@nah-red.net">alex@nah-red.net</a></p>
       </header>
