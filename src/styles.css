@@ -1,1 +1,7 @@
+.container {
+  margin-top: 40px;
+}
 
+.navbar-grid {
+  display: grid;
+}
