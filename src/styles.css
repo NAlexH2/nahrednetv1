@@ -1,7 +1,65 @@
-.container {
-  margin-top: 40px;
+:root {
+  --toastedalmond: rgba(255, 235, 205, 0.76);
 }
 
-.navbar-grid {
+.container {
+  background: rgb(0, 0, 0);
+  color: var(--toastedalmond);
   display: grid;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.myNavBar-grid {
+  display: flex;
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  margin: 30px 0 0 0;
+
+  font-weight: bold;
+}
+
+.myNavBar-grid * li {
+  list-style-type: none;
+  padding: 0 20px;
+  font-size: 25px;
+}
+
+.myNavBar-grid * a {
+  text-decoration: steelblue underline;
+  color: unset;
+}
+
+.myNavBar-grid * a:hover {
+  text-decoration: var(--toastedalmond) underline;
+  color: steelblue;
+}
+
+.myNavBar-grid .nItem1 {
+  margin: 0 20px;
+  grid-column: span 12;
+  font-size: 40px;
+}
+
+.myNavBar-grid .nItem {
+  margin: 0 25px;
+}
+
+.headshot {
+  display: flex;
+  position: absolute;
+  border: 4px;
+  border-radius: 50%;
+  border-style: ridge;
+  top: 200px;
+  width: 300px;
+  height: 300px;
+}
+
+.grid-content {
+}
+
+.bumpdown {
+  margin: 100px 10px 0;
 }
