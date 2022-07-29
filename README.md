@@ -1,3 +1,3 @@
 # Well...
 
-I do not have much to say about this currently. It's a personal project I mess with in my free time.
+this is work in progress. Pardon my dust! :)
