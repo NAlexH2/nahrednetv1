@@ -10,7 +10,6 @@ const GiveThemAHello = () => {
   if (tod < 12) element = "Good morning!";
   else if (tod < 16) element = "Good afternoon!";
   else element.textContent = "Good evening!";
-  element.style.textDecoration = "underline rgba(255, 196, 0, 0.87)";
   greeting.append(element);
   return;
 };
