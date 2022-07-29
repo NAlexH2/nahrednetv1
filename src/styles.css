@@ -1,65 +1,98 @@
 :root {
-  --toastedalmond: rgba(255, 235, 205, 0.76);
+  --toastedalmond: #eed5bf;
+  --white: white;
+  --oceanslate: #243f4c;
+  --honey: rgba(255, 196, 0, 0.87);
 }
 
-.container {
-  background: rgb(0, 0, 0);
+.mycontainer {
+  background: var(--oceanslate);
   color: var(--toastedalmond);
-  display: grid;
-  font-size: 18px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 17px;
+  font-family: "Josefin Sans", sans-serif;
 }
 
-.myNavBar-grid {
-  display: flex;
-  position: absolute;
-  top: 5px;
-  right: 20px;
-  margin: 30px 0 0 0;
-
-  font-weight: bold;
+.mynav {
+  font-size: 29px;
 }
 
-.myNavBar-grid * li {
-  list-style-type: none;
-  padding: 0 20px;
-  font-size: 25px;
+.mynav #currentnav {
+  margin: 10px;
+  text-decoration: var(--toastedalmond) underline;
+  color: var(--honey);
 }
 
-.myNavBar-grid * a {
-  text-decoration: steelblue underline;
+.mynav #navtext {
+  margin: 10px;
+  text-decoration: var(--honey) underline;
   color: unset;
 }
 
-.myNavBar-grid * a:hover {
+.mynav #mynavlogo {
+  margin-right: 30px;
+}
+
+.mynav #navtext:hover {
   text-decoration: var(--toastedalmond) underline;
-  color: steelblue;
+  color: var(--honey);
 }
 
-.myNavBar-grid .nItem1 {
-  margin: 0 20px;
-  grid-column: span 12;
-  font-size: 40px;
+.mynav #imagenavtext {
+  font-family: "Square Peg", cursive;
+  margin-right: 50px;
+  font-size: 68px;
+  text-decoration: var(--honey) underline;
+  color: unset;
 }
 
-.myNavBar-grid .nItem {
-  margin: 0 25px;
+.mynav #imagenavtext:hover {
+  text-decoration: var(--toastedalmond) underline;
+  color: var(--honey);
 }
 
 .headshot {
-  display: flex;
-  position: absolute;
-  border: 4px;
-  border-radius: 50%;
-  border-style: ridge;
-  top: 200px;
+  border: 1px;
+  border-radius: 4%;
+  border-style: solid;
   width: 300px;
   height: 300px;
 }
 
-.grid-content {
+.buttonColor {
+  background-color: var(--toastedalmond);
 }
 
-.bumpdown {
-  margin: 100px 10px 0;
+#myface {
+  margin-bottom: 40px;
+}
+
+.about {
+  max-width: 800px;
+}
+
+#unilink {
+  color: var(--white);
+  text-decoration: var(--honey) underline;
+}
+
+#unilink:hover {
+  text-decoration: var(--toastedalmond) underline;
+  color: var(--honey);
+}
+
+#currentcons {
+  max-width: 300px;
+}
+
+@media (min-width: 1200px) {
+  .about {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #extendedbio {
+    margin-top: -40px;
+    margin-left: 150px;
+  }
 }
