@@ -23,8 +23,7 @@ const HeresTheWeatherToo = (url) => {
       element.textContent =
         "The weather in the Portland is currently: " +
         parseInt((temps.main.temp - 273.15) * 1.8 + 32) +
-        " " +
-        "&deg" +
+        "º" +
         "F - " +
         temps.weather[0].description +
         ".";
