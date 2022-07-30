@@ -22,9 +22,14 @@ const HeresTheWeatherToo = (url) => {
     success: (temps) => {
       currentTemp = parseInt((temps.main.temp - 273.15) * 1.8 + 32);
       currentClouds = temps.weather[0].description;
-      element.textContent = `
-        The weather in the Portland is currently: 
-        ${currentTemp}ºF - ${currentClouds}.`;
+      $("#currentcons")
+        .append("<div>")
+        .text(
+          "The weather in the Portland is currently: " +
+            currentTemp +
+            "°F" +
+            ` - ${currentClouds}.`
+        );
     },
     error: (err) => {
       console.log(err);
