@@ -68,6 +68,10 @@
   margin-top: 30px;
 }
 
+.shortBioBump {
+  margin-top: -15px;
+}
+
 #myface {
   margin-bottom: 40px;
 }
@@ -101,20 +105,17 @@ h2 {
   display: inline;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1399px) {
   .shortBioBump {
-    max-width: 550px;
+    max-width: 480px;
+  }
+  #extendedbio {
+    max-width: 800px;
   }
 }
 
 @media (min-width: 1200px) {
   .about {
-    margin-left: 20px;
-  }
-}
-
-@media (max-width: 767px) {
-  .myButton {
     margin-left: 20px;
   }
 }
