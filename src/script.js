@@ -20,13 +20,11 @@ const HeresTheWeatherToo = (url) => {
     type: "GET",
     url: url,
     success: (temps) => {
-      element.textContent =
-        "The weather in the Portland is currently: " +
-        parseInt((temps.main.temp - 273.15) * 1.8 + 32) +
-        "º" +
-        "F - " +
-        temps.weather[0].description +
-        ".";
+      currentTemp = parseInt((temps.main.temp - 273.15) * 1.8 + 32);
+      currentClouds = temps.weather[0].description;
+      element.textContent = `
+        The weather in the Portland is currently: 
+        ${currentTemp}ºF - ${currentClouds}.`;
     },
     error: (err) => {
       console.log(err);
