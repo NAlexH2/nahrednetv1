@@ -58,16 +58,20 @@
   height: 300px;
 }
 
-.buttonColor {
+.myButton {
   background-color: var(--toastedalmond);
-}
-
-#myface {
-  margin-bottom: 40px;
 }
 
 .about {
   max-width: 800px;
+}
+
+.footer {
+  margin-top: 30px;
+}
+
+#myface {
+  margin-bottom: 40px;
 }
 
 #unilink {
@@ -81,19 +85,27 @@
 }
 
 #currentcons {
+  margin-left: 20px;
   max-width: 300px;
+}
+
+#extendedbio {
+  margin-top: 10px;
+}
+
+#contact-image {
+  width: 60px;
+  height: auto;
+  margin: 20px;
+}
+
+h2 {
+  display: inline;
 }
 
 @media (min-width: 1200px) {
   .shortBioBump {
-    margin-left: 20px;
     max-width: 550px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .extendedBioShift {
-    margin-left: 130px;
   }
 }
 
@@ -103,10 +115,14 @@
   }
 }
 
-@media (min-width: 1200px) {
-  #extendedbio {
-    max-width: 700px;
-    margin-top: -40px;
-    margin-left: 150px;
+@media (max-width: 767px) {
+  .myButton {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 577px) {
+  #imagenavtext {
+    margin-left: 52px;
   }
 }
