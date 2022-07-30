@@ -23,7 +23,7 @@ const HeresTheWeatherToo = (url) => {
       currentTemp = parseInt((temps.main.temp - 273.15) * 1.8 + 32);
       currentClouds = temps.weather[0].description;
       $("#currentcons")
-        .append("<div>")
+        .append("<span>")
         .text(
           "The weather in the Portland is currently: " +
             currentTemp +
