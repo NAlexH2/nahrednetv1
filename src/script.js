@@ -15,7 +15,6 @@ const GiveThemAHello = () => {
 };
 
 const HeresTheWeatherToo = (url) => {
-  let element = document.createElement("div");
   $.get({
     type: "GET",
     url: url,
@@ -30,7 +29,6 @@ const HeresTheWeatherToo = (url) => {
     },
     finally: () => {},
   });
-  weatherconditions.append(element);
 };
 
 GiveThemAHello();
