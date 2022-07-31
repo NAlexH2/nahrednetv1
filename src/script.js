@@ -23,7 +23,7 @@ const HeresTheWeatherToo = (url) => {
       currentTemps = parseInt((temps.main.temp - 273.15) * 1.8 + 32);
       currentClouds = temps.weather[0].description;
       $("#currentTemp").text(currentTemps);
-      $("#currentClouds").text(currentClouds);
+      $("#currentClouds").text(currentClouds + ".");
     },
     error: (err) => {
       console.log(err);
