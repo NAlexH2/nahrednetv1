@@ -115,6 +115,10 @@
   --bs-btn-color: var(--honey);
 }
 
+.card {
+  --bs-card-bg: black;
+}
+
 #myface {
   margin-bottom: 40px;
 }
