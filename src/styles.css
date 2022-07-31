@@ -103,6 +103,18 @@
   --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
 }
 
+.btn-primary {
+  --bs-btn-bg: var(--honey);
+  --bs-btn-border-color: black;
+  --bs-btn-color: black;
+}
+
+.btn-secondary {
+  --bs-btn-bg: black;
+  --bs-btn-border-color: var(--honey);
+  --bs-btn-color: var(--honey);
+}
+
 #myface {
   margin-bottom: 40px;
 }
@@ -129,7 +141,6 @@
 #contact-image {
   width: 60px;
   height: auto;
-  margin: 20px;
 }
 
 h2 {
