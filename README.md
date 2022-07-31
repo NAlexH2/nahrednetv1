@@ -18,4 +18,6 @@ This website is being deployed with [AWS Amplify](https://aws.amazon.com/amplify
 
 Additionally, the website is built using a combination of HTML (with [Bootstrap](https://getbootstrap.com/)), CSS and JavaScript. The weather is pulled from [OpenWeather](https://openweathermap.org/) and uses an API to identify the current temperature in Portland, Oregon based on a latitude and long.
 
-Finally, the greeting was also written in JavaScript. It pulls the users local time and determines (based on 24hr format) if it's before noon, after-noon or the evening (past 4pm).
+The greeting was also written in JavaScript. It pulls the users local time and determines (based on 24hr format) if it's before noon, after-noon or the evening (past 4pm).
+
+The contact form is handled by [Formspree](https://formspree.io).
