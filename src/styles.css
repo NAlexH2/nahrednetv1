@@ -1,7 +1,9 @@
 :root {
   --toastedalmond: #eed5bf;
+  --transparentalmond: #ffc0896c;
   --white: white;
   --oceanslate: #243f4c;
+  --oceanslatelight: #45738a;
   --honey: rgba(255, 196, 0, 0.87);
 }
 
@@ -58,6 +60,7 @@
 
 .myButton {
   background-color: var(--toastedalmond);
+  color: black;
 }
 
 .about {
@@ -70,6 +73,34 @@
 
 .shortBioBump {
   margin-top: -15px;
+}
+
+.bs-li-overrides {
+  font-size: 18px;
+  --bs-list-group-bg: null;
+  --bs-list-group-border-width: 5px;
+  --bs-list-group-border-color: var(--honey);
+  --bs-list-group-color: var(--toastedalmond);
+  border-style: groove;
+}
+
+.border-end,
+.border-start {
+  --bs-border-width: 3px;
+  --bs-border-style: inset;
+  --bs-border-color: var(--honey);
+}
+
+.accordion {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  --bs-accordion-bg: var(--toastedalmond);
+  --bs-accordion-border-color: var(--honey);
+  --bs-accordion-border-width: 6px;
+  --bs-accordion-active-color: var(--honey);
+  --bs-accordion-active-bg: var(--oceanslatelight);
+  --bs-accordion-btn-focus-border-color: var(--honey);
+  --bs-accordion-btn-active-icon: var(--bs-accordion-btn-icon);
 }
 
 #myface {
@@ -103,6 +134,7 @@
 
 h2 {
   display: inline;
+  font-style: oblique;
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -123,5 +155,34 @@ h2 {
 @media (max-width: 577px) {
   #imagenavtext {
     margin-left: 52px;
+  }
+}
+
+@media (max-width: 768px) {
+  .border-end {
+    --bs-border-color: null;
+  }
+  .border-start {
+    --bs-border-color: null;
+  }
+}
+
+@media (max-width: 767px) {
+  hr {
+    border: solid;
+    border-color: black;
+    border-style: solid;
+    opacity: 1;
+  }
+  .row > hr {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width: 768px) {
+  hr {
+    display: none;
   }
 }
