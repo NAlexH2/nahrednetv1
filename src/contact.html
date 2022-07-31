@@ -56,12 +56,18 @@
       <form action="https://formspree.io/f/xyyvgenw" method="POST">
         <div class="row justify-content-center mt-5">
           <span class="mb-4 col-sm-6 col-md-5 col-lg-4 col-xl-4 col-xxl-4">
-            <input type="text" class="form-control" placeholder="Full Name" />
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Full Name"
+              name="name"
+            />
           </span>
 
           <span class="col-sm-6 col-md-5 col-lg-4 col-xl-4 col-xxl-4">
             <input
               type="email"
+              name="email"
               class="form-control"
               placeholder="Email Address"
               id="inputEmail"
@@ -76,6 +82,7 @@
                 class="form-control"
                 id="exampleFormControlTextarea1"
                 rows="5"
+                name="message"
                 placeholder="What would you like to say?"
               ></textarea>
             </span>
