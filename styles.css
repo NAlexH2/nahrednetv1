@@ -32,6 +32,8 @@
 
 .mynav #mynavlogo {
   margin-right: 30px;
+  height: 50px;
+  width: auto;
 }
 
 .mynav #navtext:hover {
