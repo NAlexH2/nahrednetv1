@@ -121,6 +121,12 @@
   --bs-card-bg: black;
 }
 
+.accordionHR {
+  border: black solid 2px;
+  max-width: 90%;
+  margin: 30px 100px 40px 100px;
+}
+
 #myface {
   margin-bottom: 40px;
 }
