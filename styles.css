@@ -49,7 +49,7 @@
   color: unset;
 }
 
-.mynav #imagenavtext:hover {
+#imagenavtext:hover {
   text-decoration: var(--toastedalmond) underline;
   color: var(--honey);
 }
