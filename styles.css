@@ -15,13 +15,13 @@
 }
 
 .mynav {
-  font-size: 29px;
+  font-size: 40px;
 }
 
 .mynav #currentnav {
   margin: 10px;
-  text-decoration: var(--toastedalmond) underline;
-  color: var(--honey);
+  text-decoration: black underline;
+  color: white;
 }
 
 .mynav #navtext {
@@ -30,7 +30,7 @@
   color: unset;
 }
 
-.mynav #mynavlogo {
+#mynavlogo {
   margin-right: 30px;
   height: 50px;
   width: auto;
@@ -41,10 +41,10 @@
   color: var(--honey);
 }
 
-.mynav #imagenavtext {
+#imagenavtext {
   font-family: "Square Peg", cursive;
   margin-right: 50px;
-  font-size: 68px;
+  font-size: 100px;
   text-decoration: var(--honey) underline;
   color: unset;
 }
@@ -55,7 +55,7 @@
 }
 
 .headshot {
-  border: 1px;
+  border: 2.6px;
   border-radius: 4%;
   border-style: solid;
 }
@@ -119,6 +119,13 @@
 
 .card {
   --bs-card-bg: black;
+  padding: 0%;
+}
+
+.card * .btn-primary {
+  --bs-btn-hover-color: black;
+  --bs-btn-hover-bg: var(--toastedalmond);
+  --bs-btn-hover-border-color: black;
 }
 
 .accordionHR {
@@ -169,15 +176,24 @@ h2 {
   }
 }
 
+@media (min-width: 1400px) {
+  .shortBioBump {
+    max-width: 540px;
+  }
+}
+
 @media (min-width: 1200px) {
   .about {
     margin-left: 20px;
   }
 }
 
-@media (max-width: 577px) {
+@media (max-width: 768px) {
   #imagenavtext {
-    margin-left: 52px;
+    font-size: 68px;
+  }
+  .mynav {
+    font-size: 30px;
   }
 }
 
