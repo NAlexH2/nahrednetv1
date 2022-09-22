@@ -12,12 +12,12 @@ and explore to your hearts desire.
 
 <br />
 
-# How is this being deployed? What are you using to make this website.
+# How is this being deployed? What are you using to make this website?
 
-This website is being deployed with [AWS Amplify](https://aws.amazon.com/amplify/faqs/) through GitHub every time a new push has been detected. Probably not great for larger scale projects, but perfectly fine for this!
+This website is being deployed with [AWS Amplify](https://aws.amazon.com/amplify/faqs/) through GitHub every time a new push has been detected. I wanted to explore managing a website through a more enterprise perspective and felt this was a great choice. With AWS I was also able to establish a personal email through my website that people are able to contact me with. The form on the site also sends me an email to this address when filled out and submitted correctly.
 
-Additionally, the website is built using a combination of HTML (with [Bootstrap](https://getbootstrap.com/)), CSS and JavaScript. The weather is pulled from [OpenWeather](https://openweathermap.org/) and uses an API to identify the current temperature in Portland, Oregon based on a latitude and long.
+Additionally, the website is built using a combination of HTML (with [Bootstrap](https://getbootstrap.com/)), CSS and JavaScript.
 
-The greeting was also written in JavaScript. It pulls the users local time and determines (based on 24hr format) if it's before noon, after-noon or the evening (past 4pm).
+Utilizing the `Date` library with JavaScript, a greeting is displayed based on the users location and current time of day. It pulls the users local time and determines (based on 24hr format) if it's before noon, after-noon or the evening (past 4pm).
 
 The contact form is handled by [Formspree](https://formspree.io).
