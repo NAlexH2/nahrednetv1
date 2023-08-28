@@ -21,9 +21,6 @@ on:
         type: choice
         options:
           - dev-NextJS
-      environment:
-        description: "The environment to deploy to"
-        required: false
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
