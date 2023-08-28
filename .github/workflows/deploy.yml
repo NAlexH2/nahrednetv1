@@ -84,7 +84,7 @@ jobs:
       #   with:
       #     path: ./out
       - name: Switch to selected branch
-        run: git checkout ${{ github.event.inputs.branch }}
+        run: git fetch --all && git checkout ${{ github.event.inputs.branch }}
       - name: Install dependencies
         run: npm ci
       - name: Build with Next.js
