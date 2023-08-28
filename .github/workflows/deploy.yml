@@ -14,6 +14,10 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
     inputs:
+      description:
+        description: ""
+        required: true
+        type: string
       branch:
         description: "The branch to build"
         required: true
@@ -41,6 +45,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Statement with why workflow is being ran
+        run: |
+          echo "Workflow description : ${{ github.event.inputs.description }}
       - name: Switch to selected branch
         run: git fetch --all && git checkout ${{ github.event.inputs.branch }}
       - name: Install dependencies
