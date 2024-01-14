@@ -7,7 +7,7 @@ State University.
 
 # How to Run
 
-Requires nothing on your part! Simply visit [nah-red.net](https://www.nah-red.net/)
+Requires nothing on your part! Simply visit [nah-red.net on Github Pages](https://nalexh2.github.io/nahrednetv1/)
 and explore to your hearts desire.
 
 <br />
